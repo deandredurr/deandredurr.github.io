@@ -1,2 +1,2 @@
 # deandredurr.github.io
-my about me page
+I'm coding right now
