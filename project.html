@@ -1,0 +1,25 @@
+---
+---
+<article class="project">
+  <header>
+    <h1>{{ page.title }}</h1>
+    <div class="meta">
+      {% if page.year %}<span>{{ page.year }}</span>{% endif %}
+      {% if page.role %} • <span>{{ page.role }}</span>{% endif %}
+      {% if page.tools %} • <span>{{ page.tools | join: ", " }}</span>{% endif %}
+    </div>
+    {% if page.hero %}<img class="hero" src="{{ page.hero | relative_url }}" alt="">{% endif %}
+  </header>
+
+  <div class="content">
+    {{ content }}
+  </div>
+
+  <section class="spec">
+    <h2>Specs</h2>
+    <ul>
+      {% if page.materials %}<li><strong>Materials:</strong> {{ page.materials | join: ", " }}</li>{% endif %}
+      {% if page.credits %}<li><strong>Credits:</strong> {{ page.credits }}</li>{% endif %}
+    </ul>
+  </section>
+</article>
