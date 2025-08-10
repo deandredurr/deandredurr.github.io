@@ -1,0 +1,50 @@
+:root {
+  --bg: #fff;
+  --fg: #111;
+  --muted: #6b7280;
+  --accent: #ff3b00; /* safety orange vibe */
+  --maxw: 70ch;
+  --gutter: 1.2rem;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); }
+body { font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+
+.site-header, .site-footer {
+  display:flex; justify-content:space-between; align-items:center;
+  padding: 1rem var(--gutter); border-bottom:1px solid #eee;
+}
+.site-footer { border-top:1px solid #eee; border-bottom:0; margin-top:3rem; }
+.site-title { font-weight:700; text-decoration:none; color:var(--fg); }
+nav a { margin-left:1rem; text-decoration:none; color:var(--fg); }
+nav a:hover { text-decoration:underline; text-underline-offset:3px; }
+
+.site-main { padding: 2rem var(--gutter); max-width: 1200px; margin: 0 auto; }
+.hero { margin: 2rem 0 2.5rem; }
+.hero h1 { font-size: clamp(2rem, 6vw, 3.5rem); line-height:1.1; margin:0 0 .5rem; }
+.lede { font-size:1.1rem; color:var(--muted); max-width: var(--maxw); }
+
+h1,h2,h3 { line-height:1.2; margin: 1.5rem 0 .5rem; }
+a { color: var(--fg); }
+a.more { color: var(--accent); font-weight:600; }
+
+.grid {
+  display:grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.2rem; margin: 1rem 0 2rem;
+}
+.card { border:1px solid #eee; border-radius:16px; overflow:hidden; background:#fff; }
+.card img { display:block; width:100%; height:200px; object-fit:cover; }
+.card h3 { margin:.75rem 1rem .25rem; }
+.card .meta { color:var(--muted); margin: 0 1rem 1rem; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+
+.list { list-style:none; padding:0; margin:0; max-width: var(--maxw); }
+.list li { display:flex; justify-content:space-between; padding:.5rem 0; border-bottom:1px solid #f2f2f2; }
+.meta { color:var(--muted); font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+
+.post, .project { max-width: var(--maxw); margin: 0 auto; }
+.post h1, .project h1 { font-size: clamp(2rem, 5vw, 3rem); }
+.post .lede { color: var(--muted); }
+.project .hero { width:100%; height:auto; margin:1rem 0 1.5rem; }
+.spec h2 { margin-top:2rem; }
+.content img { max-width:100%; height:auto; border-radius: 12px; }
