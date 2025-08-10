@@ -1,0 +1,21 @@
+title: "dreDurr"
+description: "Data × Design"
+url: "https://deandredurr.github.io"
+baseurl: ""  # keep empty for user sites
+permalink: /:categories/:year/:month/:day/:title/
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+nav:
+  - title: Projects
+    url: /projects/
+  - title: Essays
+    url: /essays/
+  - title: About
+    url: /about/
