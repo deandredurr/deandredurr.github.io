@@ -1,13 +1,13 @@
 ---
 layout: project
-title: "First Project"
+title: "Health Dash"
 year: 2025
 role: "Data Engineer, Builder"
-thumb: /assets/img/sample-thumb.jpg
-hero: /assets/img/sample-hero.jpg
+thumb: /assets/img/healthdash-thumb.jpg
+hero: /assets/img/healthdash-hero.png
 tools: ["Python", "D3.js", "SQL"]
 materials: ["Markdown", "Jekyll", "GitHub Pages"]
-credits: "You"
+credits: "ME"
 ---
 
 Short case write-up. Add process shots and specs above.
