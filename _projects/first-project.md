@@ -5,13 +5,13 @@ year: 2025
 role: "Data Engineer, Builder"
 thumb: /assets/img/healthdash-thumb.jpg
 hero: /assets/img/healthdash-hero.png
-tools: ["Python", "D3.js", "SQL", "Stearmlit"]
+tools: ["Python", "D3.js", "SQL", "Streamlit"]
 materials: ["Markdown", "Jekyll", "GitHub Pages"]
 credits: "ME"
 ---
 2025-08-11 20:05:29
 
-Idea begins for Health Dasth.
+Idea begins for Health Dash.
 What I decided to build was a health tracking dashboard using only my Apple Watch.
 
 I decided to do this after realizing how many data points my watch is collecting and I am only using my 5% of it. I could use so much more of the data for analysis purposes.
