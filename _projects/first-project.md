@@ -16,6 +16,8 @@ credits: "Deandre Durr"
 <<<<<<< ours
 <<<<<<< ours
 <<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
 Idea begins for Health Dash.
 What I decided to build was a health tracking dashboard using only my Apple Watch.
 
@@ -27,6 +29,12 @@ There are a lot of studies that show an ounce of prevention goes further than a 
 
 
 
+=======
+Health Dash started as a simple question: how much of my Apple Watch data am I actually using?
+>>>>>>> theirs
+=======
+Health Dash started as a simple question: how much of my Apple Watch data am I actually using?
+>>>>>>> theirs
 =======
 Health Dash started as a simple question: how much of my Apple Watch data am I actually using?
 >>>>>>> theirs

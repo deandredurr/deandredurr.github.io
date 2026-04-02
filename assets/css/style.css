@@ -89,6 +89,10 @@ h1, h2, h3 {
 h1 { font-size: clamp(2rem, 7vw, 3.5rem); }
 h2 { font-size: clamp(1.3rem, 4vw, 1.75rem); }
 h3 { font-size: 1.1rem; }
+<<<<<<< ours
+<<<<<<< ours
+=======
+>>>>>>> theirs
 
 .lede { max-width: 74ch; color: var(--muted); }
 
@@ -169,6 +173,7 @@ h3 { font-size: 1.1rem; }
 }
 <<<<<<< ours
 <<<<<<< ours
+<<<<<<< ours
 
 .status-indicator {
   font-family: "IBM Plex Mono", "SFMono-Regular", Menlo, Consolas, monospace;
@@ -432,6 +437,9 @@ h3 { font-size: 1.1rem; }
 >>>>>>> theirs
 =======
 
+=======
+
+>>>>>>> theirs
 .status-indicator {
   font-family: "IBM Plex Mono", "SFMono-Regular", Menlo, Consolas, monospace;
   font-size: 0.7rem;
@@ -440,6 +448,7 @@ h3 { font-size: 1.1rem; }
   border: 1px solid var(--line);
   padding: 0.2rem 0.45rem;
   color: var(--ok);
+<<<<<<< ours
 }
 
 .module-card h3 a {
@@ -527,6 +536,217 @@ h3 { font-size: 1.1rem; }
 
 >>>>>>> theirs
 =======
+
+>>>>>>> theirs
+=======
+
+.lede { max-width: 74ch; color: var(--muted); }
+
+.kicker,
+.meta,
+.module-id,
+.module-meta dt {
+  font-family: "IBM Plex Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.console-section {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.section-head {
+  display: flex;
+  gap: 0.7rem;
+  align-items: baseline;
+  border-top: 1px solid var(--line);
+  padding-top: 0.7rem;
+}
+
+.system-panel {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  padding: 1rem;
+}
+
+.console-hero {
+  display: grid;
+  gap: 0.7rem;
+  padding: clamp(1rem, 2.5vw, 2rem);
+}
+
+.role-line {
+  margin: 0;
+  font-size: 0.94rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--accent);
+}
+
+.meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.label-chip {
+  font-family: "IBM Plex Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: 0.74rem;
+  border: 1px solid var(--line);
+  padding: 0.24rem 0.45rem;
+  color: var(--muted);
+}
+
+.module-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+  gap: 0.8rem;
+}
+
+.module-card {
+  display: grid;
+  gap: 0.6rem;
+  min-height: 220px;
+}
+
+.module-topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-indicator {
+  font-family: "IBM Plex Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  border: 1px solid var(--line);
+  padding: 0.2rem 0.45rem;
+  color: var(--ok);
+}
+
+=======
+}
+
+>>>>>>> theirs
+.module-card h3 a {
+  text-decoration: none;
+}
+
+.module-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.module-meta {
+  margin: 0;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.module-meta div {
+  display: grid;
+  gap: 0.1rem;
+  border-top: 1px dashed var(--line);
+  padding-top: 0.4rem;
+}
+
+.module-meta dd {
+  margin: 0;
+  font-size: 0.84rem;
+}
+
+.archive-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+}
+
+.archive-list li {
+  display: grid;
+  gap: 0.35rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.archive-list li:last-child { border-bottom: 0; }
+
+.archive-list .meta { text-transform: none; letter-spacing: 0.02em; }
+
+.tag-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+  gap: 0.45rem;
+}
+<<<<<<< ours
+
+.tag-grid li {
+  border: 1px solid var(--line);
+  padding: 0.55rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.next-move p { margin: 0 0 0.8rem; }
+.next-move p:last-child { margin-bottom: 0; }
+
+.list { list-style: none; margin: 0; padding: 0; border: 1px solid var(--line); }
+.list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.6rem 0.8rem;
+  border-bottom: 1px solid var(--line);
+}
+.list li:last-child { border-bottom: 0; }
+.list a { text-decoration: none; }
+
+.more {
+  text-decoration: none;
+  font-size: 0.83rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+}
+
+>>>>>>> theirs
+=======
+
+.tag-grid li {
+  border: 1px solid var(--line);
+  padding: 0.55rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.next-move p { margin: 0 0 0.8rem; }
+.next-move p:last-child { margin-bottom: 0; }
+
+.list { list-style: none; margin: 0; padding: 0; border: 1px solid var(--line); }
+.list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.6rem 0.8rem;
+  border-bottom: 1px solid var(--line);
+}
+.list li:last-child { border-bottom: 0; }
+.list a { text-decoration: none; }
+
+.more {
+  text-decoration: none;
+  font-size: 0.83rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+}
 
 >>>>>>> theirs
 /* Existing page compatibility */
@@ -562,7 +782,13 @@ h3 { font-size: 1.1rem; }
 <<<<<<< ours
 <<<<<<< ours
 <<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
 =======
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
 =======
 >>>>>>> theirs
 =======
@@ -587,6 +813,12 @@ h3 { font-size: 1.1rem; }
 
 <<<<<<< ours
 <<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
 >>>>>>> theirs
 =======
 >>>>>>> theirs
