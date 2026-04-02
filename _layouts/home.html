@@ -1,11 +1,25 @@
 ---
 layout: default
 ---
-<section class="hero">
-  <h1>Make things. Show your work.</h1>
-  <p class="lede">Data × Design Sandbox. Build logs, essays, and projects.</p>
+<section class="console-hero system-panel" aria-labelledby="identity-title">
+  <p class="kicker">Identity Panel // Mission Console</p>
+  <h1 id="identity-title">Deandre Durr</h1>
+  <p class="role-line">Data Engineer / Systems Builder / Experimental Technologist</p>
+  <p class="lede">Building tools that turn raw data into decisions, from ingestion pipelines to operational dashboards and experimental prototypes.</p>
+  <div class="meta-row">
+    <span class="label-chip">Ops Region: US</span>
+    <span class="label-chip">Focus: Data, Automation, Performance</span>
+    <span class="label-chip">Mode: Build → Measure → Iterate</span>
+  </div>
 </section>
 
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
 <a href="https://github.com/deandredurr">
   <img
     src="https://streak-stats.demolab.com?user=deandredurr&theme=transparent&hide_border=true&date_format=M%20j%5B%2C%20Y%5D"
@@ -17,30 +31,237 @@ layout: default
 <section>
   <h2>Projects</h2>
   <div class="grid">
+=======
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+<section class="console-section" aria-labelledby="systems-heading">
+  <div class="section-head">
+    <p class="kicker">Module 01</p>
+    <h2 id="systems-heading">Active Systems</h2>
+  </div>
+
+  <div class="module-grid">
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
     {%- for project in site.projects limit:6 -%}
-    <article class="card">
-      <a href="{{ project.url | relative_url }}">
-        {% if project.thumb %}<img src="{{ project.thumb | relative_url }}" alt="">{% endif %}
-        <h3>{{ project.title }}</h3>
-        <div class="meta">
-          <span>{{ project.year }}</span>{% if project.role %} • <span>{{ project.role }}</span>{% endif %}
+      {%- assign status = project.status | default: "Active" -%}
+      {%- assign domain = project.domain | default: "Data Infrastructure" -%}
+      <article class="system-panel module-card">
+        <div class="module-topline">
+          <span class="module-id">SYS-{{ forloop.index | prepend: '0' }}</span>
+          <span class="status-indicator">{{ status }}</span>
         </div>
-      </a>
-    </article>
+        <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+        <p>{{ project.excerpt | strip_html | truncate: 130 }}</p>
+        <dl class="module-meta">
+          <div><dt>Domain</dt><dd>{{ domain }}</dd></div>
+          <div><dt>Role</dt><dd>{{ project.role | default: "Builder" }}</dd></div>
+          <div><dt>Stack</dt><dd>{% if project.tools %}{{ project.tools | join: ", " }}{% else %}Python, SQL, Visualization{% endif %}</dd></div>
+        </dl>
+      </article>
     {%- endfor -%}
   </div>
-  <p><a class="more" href="{{ '/projects/' | relative_url }}">All projects →</a></p>
+  <p><a class="more" href="{{ '/projects/' | relative_url }}">Open full systems archive →</a></p>
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
 </section>
 
-<section>
-  <h2>Essays</h2>
+<section class="console-section" aria-labelledby="lab-heading">
+  <div class="section-head">
+    <p class="kicker">Module 02</p>
+    <h2 id="lab-heading">Experiments / Lab</h2>
+  </div>
+  <div class="system-panel">
+    <ul class="archive-list">
+      <li><span class="status-indicator">Prototype</span><strong>Edge Sensor Pipeline</strong><span class="meta">Streaming device telemetry into compact anomaly checks.</span></li>
+      <li><span class="status-indicator">In Progress</span><strong>Recovery Signal Model</strong><span class="meta">Translating wearable metrics into daily readiness readouts.</span></li>
+      <li><span class="status-indicator">Research</span><strong>Ops Playback Toolkit</strong><span class="meta">Replay tooling for incident diagnostics and performance reviews.</span></li>
+    </ul>
+  </div>
+</section>
+
+=======
+</section>
+
+<section class="console-section" aria-labelledby="lab-heading">
+  <div class="section-head">
+    <p class="kicker">Module 02</p>
+    <h2 id="lab-heading">Experiments / Lab</h2>
+  </div>
+  <div class="system-panel">
+    <ul class="archive-list">
+      <li><span class="status-indicator">Prototype</span><strong>Edge Sensor Pipeline</strong><span class="meta">Streaming device telemetry into compact anomaly checks.</span></li>
+      <li><span class="status-indicator">In Progress</span><strong>Recovery Signal Model</strong><span class="meta">Translating wearable metrics into daily readiness readouts.</span></li>
+      <li><span class="status-indicator">Research</span><strong>Ops Playback Toolkit</strong><span class="meta">Replay tooling for incident diagnostics and performance reviews.</span></li>
+    </ul>
+  </div>
+</section>
+
+>>>>>>> theirs
+=======
+</section>
+
+<section class="console-section" aria-labelledby="lab-heading">
+  <div class="section-head">
+    <p class="kicker">Module 02</p>
+    <h2 id="lab-heading">Experiments / Lab</h2>
+  </div>
+  <div class="system-panel">
+    <ul class="archive-list">
+      <li><span class="status-indicator">Prototype</span><strong>Edge Sensor Pipeline</strong><span class="meta">Streaming device telemetry into compact anomaly checks.</span></li>
+      <li><span class="status-indicator">In Progress</span><strong>Recovery Signal Model</strong><span class="meta">Translating wearable metrics into daily readiness readouts.</span></li>
+      <li><span class="status-indicator">Research</span><strong>Ops Playback Toolkit</strong><span class="meta">Replay tooling for incident diagnostics and performance reviews.</span></li>
+    </ul>
+  </div>
+</section>
+
+>>>>>>> theirs
+=======
+</section>
+
+<section class="console-section" aria-labelledby="lab-heading">
+  <div class="section-head">
+    <p class="kicker">Module 02</p>
+    <h2 id="lab-heading">Experiments / Lab</h2>
+  </div>
+  <div class="system-panel">
+    <ul class="archive-list">
+      <li><span class="status-indicator">Prototype</span><strong>Edge Sensor Pipeline</strong><span class="meta">Streaming device telemetry into compact anomaly checks.</span></li>
+      <li><span class="status-indicator">In Progress</span><strong>Recovery Signal Model</strong><span class="meta">Translating wearable metrics into daily readiness readouts.</span></li>
+      <li><span class="status-indicator">Research</span><strong>Ops Playback Toolkit</strong><span class="meta">Replay tooling for incident diagnostics and performance reviews.</span></li>
+    </ul>
+  </div>
+</section>
+
+>>>>>>> theirs
+=======
+</section>
+
+<section class="console-section" aria-labelledby="lab-heading">
+  <div class="section-head">
+    <p class="kicker">Module 02</p>
+    <h2 id="lab-heading">Experiments / Lab</h2>
+  </div>
+  <div class="system-panel">
+    <ul class="archive-list">
+      <li><span class="status-indicator">Prototype</span><strong>Edge Sensor Pipeline</strong><span class="meta">Streaming device telemetry into compact anomaly checks.</span></li>
+      <li><span class="status-indicator">In Progress</span><strong>Recovery Signal Model</strong><span class="meta">Translating wearable metrics into daily readiness readouts.</span></li>
+      <li><span class="status-indicator">Research</span><strong>Ops Playback Toolkit</strong><span class="meta">Replay tooling for incident diagnostics and performance reviews.</span></li>
+    </ul>
+  </div>
+</section>
+
+>>>>>>> theirs
+=======
+</section>
+
+<section class="console-section" aria-labelledby="lab-heading">
+  <div class="section-head">
+    <p class="kicker">Module 02</p>
+    <h2 id="lab-heading">Experiments / Lab</h2>
+  </div>
+  <div class="system-panel">
+    <ul class="archive-list">
+      <li><span class="status-indicator">Prototype</span><strong>Edge Sensor Pipeline</strong><span class="meta">Streaming device telemetry into compact anomaly checks.</span></li>
+      <li><span class="status-indicator">In Progress</span><strong>Recovery Signal Model</strong><span class="meta">Translating wearable metrics into daily readiness readouts.</span></li>
+      <li><span class="status-indicator">Research</span><strong>Ops Playback Toolkit</strong><span class="meta">Replay tooling for incident diagnostics and performance reviews.</span></li>
+    </ul>
+  </div>
+</section>
+
+>>>>>>> theirs
+=======
+</section>
+
+<section class="console-section" aria-labelledby="lab-heading">
+  <div class="section-head">
+    <p class="kicker">Module 02</p>
+    <h2 id="lab-heading">Experiments / Lab</h2>
+  </div>
+  <div class="system-panel">
+    <ul class="archive-list">
+      <li><span class="status-indicator">Prototype</span><strong>Edge Sensor Pipeline</strong><span class="meta">Streaming device telemetry into compact anomaly checks.</span></li>
+      <li><span class="status-indicator">In Progress</span><strong>Recovery Signal Model</strong><span class="meta">Translating wearable metrics into daily readiness readouts.</span></li>
+      <li><span class="status-indicator">Research</span><strong>Ops Playback Toolkit</strong><span class="meta">Replay tooling for incident diagnostics and performance reviews.</span></li>
+    </ul>
+  </div>
+</section>
+
+>>>>>>> theirs
+<section class="console-section" aria-labelledby="notes-heading">
+  <div class="section-head">
+    <p class="kicker">Module 03</p>
+    <h2 id="notes-heading">Notes / Writings</h2>
+  </div>
   <ul class="list">
     {%- for post in site.posts limit:5 -%}
       <li>
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        <span class="meta">{{ post.date | date: "%b %d, %Y" }}</span>
+        <span class="meta">{{ post.date | date: "%Y-%m-%d" }}</span>
       </li>
     {%- endfor -%}
   </ul>
-  <p><a class="more" href="{{ '/essays/' | relative_url }}">All essays →</a></p>
+  <p><a class="more" href="{{ '/essays/' | relative_url }}">Open notebook archive →</a></p>
+</section>
+
+<section class="console-section" aria-labelledby="profile-heading">
+  <div class="section-head">
+    <p class="kicker">Module 04</p>
+    <h2 id="profile-heading">Capabilities / Systems Profile</h2>
+  </div>
+  <div class="system-panel">
+    <ul class="tag-grid" aria-label="Capability tags">
+      <li>Data Pipelines</li>
+      <li>Automation</li>
+      <li>Analytics</li>
+      <li>Robotics Interfaces</li>
+      <li>Health Data Systems</li>
+      <li>Infrastructure</li>
+      <li>Edge Devices</li>
+      <li>Experiment Design</li>
+      <li>Performance Analysis</li>
+    </ul>
+  </div>
+</section>
+
+<section class="console-section" aria-labelledby="contact-heading">
+  <div class="section-head">
+    <p class="kicker">Module 05</p>
+    <h2 id="contact-heading">Contact / Next Move</h2>
+  </div>
+  <div class="system-panel next-move">
+    <p>If you are building a data-heavy product, an instrumentation stack, or an experimental system, I am open to technical collaborations.</p>
+    <p><a href="mailto:deandremdurr@gmail.com">deandremdurr@gmail.com</a> · <a href="{{ '/about/' | relative_url }}">Profile notes</a> · <a href="{{ '/projects/' | relative_url }}">System archive</a></p>
+  </div>
 </section>
